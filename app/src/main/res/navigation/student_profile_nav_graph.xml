@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/studentProfileFragment">
+
+    <fragment
+        android:id="@+id/studentProfileFragment"
+        android:name="com.example.studentmanager.profile.StudentProfileFragment"
+        android:label="fragment_student_profile"
+        tools:layout="@layout/fragment_student_profile" >
+        <action
+            android:id="@+id/action_studentProfileFragment_to_updateStudentFragment"
+            app:destination="@id/updateStudentFragment" />
+        <action
+            android:id="@+id/action_studentProfileFragment_to_studentSubjectFragment"
+            app:destination="@id/studentSubjectFragment" />
+        <action
+            android:id="@+id/action_studentProfileFragment_to_studentGradeSheetFragment"
+            app:destination="@id/studentGradeSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateStudentFragment"
+        android:name="com.example.studentmanager.profile.UpdateStudentFragment"
+        tools:layout="@layout/fragment_update_student"
+        android:label="UpdateStudentFragment" />
+    <fragment
+        android:id="@+id/studentSubjectFragment"
+        android:name="com.example.studentmanager.profile.StudentSubjectFragment"
+        android:label="fragment_student_subject"
+        tools:layout="@layout/fragment_student_subject" />
+    <fragment
+        android:id="@+id/studentGradeSheetFragment"
+        android:name="com.example.studentmanager.profile.StudentGradeSheetFragment"
+        android:label="fragment_student_grade_sheet"
+        tools:layout="@layout/fragment_student_grade_sheet" />
+</navigation>

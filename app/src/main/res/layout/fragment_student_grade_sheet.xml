@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.StudentGradeSheetFragment">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/grade_icon"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:src="@drawable/ic_grades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/grade_linear_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grade_icon"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hi"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/grade_student_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:text="Corina"
+            android:textColor="#00695C"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/grade_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_your_grade_sheet"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grade_linear_welcome"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grade_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/grade_export_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grade_title_tv"
+        app:layout_constraintVertical_bias="0.529"
+        tools:itemCount="10"
+        tools:listitem="@layout/grade_item_layout"/>
+
+    <Button
+        android:id="@+id/grade_export_btn"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="15dp"
+        android:text="@string/export_this_report"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

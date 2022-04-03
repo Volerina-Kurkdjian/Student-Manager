@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/valeria_corina_balan/Desktop/StudentManager-master/app/src/main/res/layout/custom_spinner_subjects.xml" value="0.3671875" />
+        <entry key="..\:/Users/valeria_corina_balan/Desktop/StudentManager-master/app/src/main/res/layout/fragment_profesor_profile.xml" value="0.3671875" />
+        <entry key="..\:/Users/valeria_corina_balan/Desktop/StudentManager-master/app/src/main/res/layout/fragment_profesor_subject.xml" value="0.3671875" />
+        <entry key="..\:/Users/valeria_corina_balan/Desktop/StudentManager-master/app/src/main/res/layout/subject_item_layout.xml" value="0.3671875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

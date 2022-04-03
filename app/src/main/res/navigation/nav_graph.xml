@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/roleChoserFragment">
+
+    <fragment
+        android:id="@+id/roleChoserFragment"
+        android:name="com.example.studentmanager.authentication.fragments.RoleChoserFragment"
+        android:label="fragment_role_choser"
+        tools:layout="@layout/fragment_role_choser" >
+        <action
+            android:id="@+id/action_roleChoserFragment_to_registrationLoginFragment"
+            app:destination="@id/registrationLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationLoginFragment"
+        android:name="com.example.studentmanager.authentication.fragments.RegistrationLoginFragment"
+        android:label="fragment_registration_login"
+        tools:layout="@layout/fragment_registration_login" >
+        <action
+            android:id="@+id/action_registrationLoginFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registrationLoginFragment_to_profesorRegistrationFragment"
+            app:destination="@id/profesorRegistrationFragment" />
+        <action
+            android:id="@+id/action_registrationLoginFragment_to_studentRegistrationFragment"
+            app:destination="@id/studentRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.studentmanager.authentication.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/profesorRegistrationFragment"
+        android:name="com.example.studentmanager.authentication.fragments.ProfesorRegistrationFragment"
+        android:label="fragment_profesor_registration"
+        tools:layout="@layout/fragment_profesor_registration" />
+    <fragment
+        android:id="@+id/studentRegistrationFragment"
+        android:name="com.example.studentmanager.authentication.fragments.StudentRegistrationFragment"
+        android:label="fragment_student_registration"
+        tools:layout="@layout/fragment_student_registration" />
+</navigation>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">StudentManager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profesor_role_button">Professor</string>
+    <string name="student_role_button">Student</string>
+    <string name="registration_button">Registration</string>
+    <string name="login_button">Login</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="save_login_button">Login</string>
+    <string name="name">Name</string>
+    <string name="signup_button">Signup</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="budget">Budget</string>
+    <string name="tax">Tax</string>
+    <string name="group_number">Group Number</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="update_profile">Update profile</string>
+    <string name="diploma">Diploma</string>
+    <string name="grade">Grade</string>
+    <string name="save">Save</string>
+    <string name="choose_exam_date_for_subject">Choose exam date for subject</string>
+    <string name="update_grade">Update Grade</string>
+    <string name="view_grade_sheet">View Grade Sheet</string>
+    <string name="welcome">Welcome</string>
+    <string name="hi">Hi</string>
+    <string name="welcome_to_your_grade_sheet">Welcome to your grade sheet</string>
+    <string name="export_this_report">Export this report</string>
+    <string name="see_chart">See chart</string>
+</resources>

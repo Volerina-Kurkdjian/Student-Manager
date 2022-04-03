@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profesor_profile_nav_graph"
+    app:startDestination="@id/profesorProfileFragment">
+
+    <fragment
+        android:id="@+id/profesorProfileFragment"
+        android:name="com.example.studentmanager.profile.ProfesorProfileFragment"
+        android:label="fragment_profesor_profile"
+        tools:layout="@layout/fragment_profesor_profile" >
+        <action
+            android:id="@+id/action_profesorProfileFragment_to_updateProfesorFragment"
+            app:destination="@id/updateProfesorFragment" />
+        <action
+            android:id="@+id/action_profesorProfileFragment_to_profesorSubjectFragment"
+            app:destination="@id/profesorSubjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfesorFragment"
+        android:name="com.example.studentmanager.profile.UpdateProfesorFragment"
+        android:label="fragment_update_profesor"
+        tools:layout="@layout/fragment_update_profesor" />
+    <fragment
+        android:id="@+id/profesorSubjectFragment"
+        android:name="com.example.studentmanager.profile.ProfesorSubjectFragment"
+        android:label="fragment_profesor_subject"
+        tools:layout="@layout/fragment_profesor_subject" >
+        <action
+            android:id="@+id/action_profesorSubjectFragment_to_chartFragment"
+            app:destination="@id/chartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chartFragment"
+        android:name="com.example.studentmanager.profile.ChartFragment"
+        android:label="fragment_chart"
+        tools:layout="@layout/fragment_chart" />
+</navigation>
